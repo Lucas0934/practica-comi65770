@@ -1,0 +1,286 @@
+/* Esto es un comentario
+
+Elemento {
+    propiedad: valor: 
+
+}
+
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Enlace-dos {
+    text-decoration: none;
+    color: #1dce37;
+}
+.Enlace-dos:link {
+    text-decoration: underline;
+    color: black;
+
+}
+.Enlace-dos:hover {
+    color: aqua;
+}
+
+header {
+
+position: sticky;
+top: 0;
+z-index: 100;
+background-color: #abb9ad;
+}
+p {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+
+
+ul {
+    width: 80%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    text-align: center;
+    border: 1px black solid;
+    width: 50%;
+    margin: auto;
+}
+h1 .titulo {
+    color: #333
+    
+}
+h2 {
+    color: #333
+}
+h4 {
+    color: #666
+
+}
+video {
+    
+    width: 500px;
+    height: 300px; 
+    margin-top: 10px; 
+}
+.videosordenados {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 15px;
+    border: 2px black solid;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+}
+.videosordenados video{
+
+    width: 100%;
+}
+.videosordenados video:hover{
+    filter: sepia(80%);
+}
+#videosdestacados {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-evenly;
+    object-fit: cover;
+    
+}
+
+ .FutbolAmateur {
+    color: black(2, 4, 5, 0.637);
+    text-align: start;
+    background-color: rgb(126, 247, 6);
+    
+    width: 100%
+    
+     ;
+}
+
+
+main {
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-evenly;
+}
+    
+
+footer {
+    background-color: dimgray;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+.backgrounInscripciones {
+    
+    background-image: url(../img/Imagen-principal.jpg);
+    background-position: center;
+    background-size: contain;
+    
+
+   }
+ .whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+ }
+ 
+nav {
+    display: flex;
+}
+.SembrarEspacio {
+    clip-path: circle(50%at 47% 50%);
+}
+.facebook {
+    clip-path: circle(40%at 47% 50%);
+}
+.instagram{
+    clip-path: circle(540%at 47% 50%);
+}
+.twitter{
+    clip-path: circle(40%at 47% 50%);
+}
+
+.InscripcionPrete{
+    /* From https://css.glass */
+background: #7fffd4;
+
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1.9px);
+-webkit-backdrop-filter: blur(1.9px);
+border: 1px solid rgba(18, 88, 88, 0.29);
+}
+.grid-padre {
+    
+    
+    
+    width: 25%;
+    display: grid;
+    background-color: #7fffd4;
+    grid-template-rows: 100px 5 1fr;
+    grid-template-columns: 1;
+    grid-template-areas: "box1" 
+                          "box2"
+                          "box3"
+                          "box4"
+                          "box5";
+    height: 100vh;
+                        
+}
+.hijo1{
+    text-align: center;
+    grid-template-areas: box1;
+    border: 1px black solid;
+
+}
+.hijo2{
+    text-align: center;
+    grid-template-areas: box2;
+    border: 1px black solid;
+
+}
+.hijo3{
+    text-align: center;
+    grid-template-areas: box3;
+    border: 1px black solid;
+
+}
+.hijo4{
+    text-align: center; 
+    grid-template-areas: box4;
+    border: 1px black solid;
+
+}
+.hijo5{
+    text-align: center;
+    grid-template-areas: box5;
+    border: 1px black solid;
+
+}
+
+.FondoDescripcion {
+    background-image: url(../img/Imagen-principal.jpg);
+    
+}
+.Imageninicio {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+
+.Descripcion {
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background: rgba(25, 206, 197, 0.73);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.6px);
+-webkit-backdrop-filter: blur(7.6px);
+border: 1px solid rgba(18, 88, 79, 0.71);
+    width: 600px;
+    margin-left: 450px;
+}
+
+
+
+@media screen and (max-width: 768px ){
+    
+
+
+.grid-padre {
+    
+    
+    
+    grid-template-rows: 90px 3 1fr;
+    grid-template-areas: "box1" 
+                          "box4"
+                          "box5";
+    height: 90vh;
+}
+.hijo2 {
+display: none;
+}
+.hijo3 {
+display: none;
+}
+}
+@media screen and (max-width: 576px ){
+    .grid-padre{
+    grid-template-rows: 80px 3 1fr;
+    grid-template-areas: "box1" 
+                          "box2"
+                          "box5";
+    height: 80vh;
+    }
+.hijo3 {
+    display: none;
+}
+.hijo4 {
+    display: none;
+}
+.hijo2 {
+    display: block;
+}
+.hijo3{
+    display: block;
+}
+
+    
+}
